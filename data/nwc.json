@@ -1,0 +1,131 @@
+{
+  "schema": "nwc-trend/v1",
+  "company": "Northwind Components",
+  "currency": "USD",
+  "period": "month",
+  "conventions": {
+    "nwc": "currentAssets - currentLiabilities",
+    "nwcToRevenue": "NWC / monthly revenue (period-matched, not TTM or annualized)",
+    "turnover": "monthly revenue / NWC (period-matched; reciprocal of NWC-to-revenue when both defined)",
+    "monthsCoverage": "NWC / monthly operating expenses (opex), not revenue/12"
+  },
+  "targets": {
+    "nwc": 2500000,
+    "nwcToRevenue": 1.4,
+    "turnover": 0.75,
+    "monthsCoverage": 1.6
+  },
+  "targetPolarity": {
+    "nwc": "floor",
+    "nwcToRevenue": "ceiling",
+    "turnover": "floor",
+    "monthsCoverage": "floor"
+  },
+  "months": [
+    {
+      "month": "2025-01",
+      "currentAssets": 4200000,
+      "currentLiabilities": 2100000,
+      "revenue": 1800000,
+      "opex": 1250000
+    },
+    {
+      "month": "2025-02",
+      "currentAssets": 4280000,
+      "currentLiabilities": 2150000,
+      "revenue": 1760000,
+      "opex": 1240000
+    },
+    {
+      "month": "2025-03",
+      "currentAssets": 4450000,
+      "currentLiabilities": 2220000,
+      "revenue": 1980000,
+      "opex": 1280000
+    },
+    {
+      "month": "2025-04",
+      "currentAssets": 4510000,
+      "currentLiabilities": 2280000,
+      "revenue": 1920000,
+      "opex": 1300000
+    },
+    {
+      "month": "2025-05",
+      "currentAssets": 4680000,
+      "currentLiabilities": 2310000,
+      "revenue": 2050000,
+      "opex": 1320000
+    },
+    {
+      "month": "2025-06",
+      "currentAssets": 4820000,
+      "currentLiabilities": 2480000,
+      "revenue": 2180000,
+      "opex": 1360000
+    },
+    {
+      "month": "2025-07",
+      "currentAssets": 4750000,
+      "currentLiabilities": 2620000,
+      "revenue": 2090000,
+      "opex": 1380000
+    },
+    {
+      "month": "2025-08",
+      "currentAssets": 4960000,
+      "currentLiabilities": 2540000,
+      "revenue": 2160000,
+      "opex": 1390000
+    },
+    {
+      "month": "2025-09",
+      "currentAssets": 5180000,
+      "currentLiabilities": 2590000,
+      "revenue": 2240000,
+      "opex": 1410000
+    },
+    {
+      "month": "2025-10",
+      "currentAssets": 5350000,
+      "currentLiabilities": 2710000,
+      "revenue": 2310000,
+      "opex": 1440000
+    },
+    {
+      "month": "2025-11",
+      "currentAssets": 5620000,
+      "currentLiabilities": 2880000,
+      "revenue": 2480000,
+      "opex": 1490000
+    },
+    {
+      "month": "2025-12",
+      "currentAssets": 5410000,
+      "currentLiabilities": 3050000,
+      "revenue": 2520000,
+      "opex": 1520000
+    },
+    {
+      "month": "2026-01",
+      "currentAssets": 5280000,
+      "currentLiabilities": 2790000,
+      "revenue": 2150000,
+      "opex": 1470000
+    },
+    {
+      "month": "2026-02",
+      "currentAssets": 5470000,
+      "currentLiabilities": 2820000,
+      "revenue": 2220000,
+      "opex": 1480000
+    },
+    {
+      "month": "2026-03",
+      "currentAssets": 5690000,
+      "currentLiabilities": 2860000,
+      "revenue": 2380000,
+      "opex": 1510000
+    }
+  ]
+}
