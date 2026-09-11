@@ -314,7 +314,7 @@ else
   else
     pass "curl first-paint has no Loading shell"
   fi
-  MONTH_ROWS="$(echo "$HTML" | grep -c "data-month=" || true)"
+  MONTH_ROWS="$(printf '%s' "$HTML" | grep -o 'data-month=' | wc -l | tr -d ' ')"
   if [[ "$MONTH_ROWS" -ge 12 ]]; then
     pass "curl first-paint has at least 12 month rows"
   else
